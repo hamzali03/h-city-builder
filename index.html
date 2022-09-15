@@ -1,39 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>Web App</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
+    <body>
+        <header>
+            <img class="logo" src="assets/html_css_js.png" alt="logo" />
+            <h1>City Builder</h1>
+        </header>
 
-</head>
+        <main>
+            <h2>Welcome to Gotham City....</h2>
+            <img src="./assets/gotham.jpg" />
+            <img src="./assets/images.jpg" />
 
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
-    </main>
-
-</body>
-
+            <section class="controls">
+                <label>
+                    Name
+                    <input type="name" />
+                    <select id="name-select">
+                        <button id="add-button">Add</button>
+                    </select>
+                </label>
+                <label>
+                    Climate
+                    <input type="climate" />
+                    <select id="climate-select">
+                        <option value="cold">Polar</option>
+                        <option value="hot">Desert</option>
+                        <option value="rainy">Tropical</option>
+                        <button id="add-button">Add</button>
+                    </select>
+                </label>
+                <label>
+                    Architecture
+                    <input type="architecture" />
+                    <select id="architecture">
+                        <option value="modern">modern</option>
+                        <option value="futuristic">futuristic</option>
+                        <option value=""></option>
+                    </select>
+                </label>
+                <label>
+                    City Attractions
+                    <input type="city-attractions" />
+                    <select id="city-attractions">
+                        <option value="museums">museums</option>
+                        <option value="bridges">bike on bridges</option>
+                        <option value="free pizza fridays">free pizza fridays</option>
+                        <option value="farmer markets">farmer markets</option>
+                    </select>
+                </label>
+            </section>
+        </main>
+    </body>
 </html>
