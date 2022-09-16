@@ -30,47 +30,52 @@
 
         <main>
             <h2>Welcome to Gotham City....</h2>
-            <img src="./assets/gotham.jpg" />
-            <img src="./assets/images.jpg" />
-
+            
             <section class="controls">
-                <label>
-                    Name
-                    <input type="name" />
-                    <select id="name-select">
-                        <button id="add-button">Add</button>
+                <div id="inputs"> 
+                    <label>
+                        Name
+                        <input id="name-input" />
                     </select>
                 </label>
                 <label>
                     Climate
-                    <input type="climate" />
                     <select id="climate-select">
                         <option value="cold">Polar</option>
-                        <option value="hot">Desert</option>
+                        <option value="hot">sunny</option>
                         <option value="rainy">Tropical</option>
                         <button id="add-button">Add</button>
                     </select>
                 </label>
                 <label>
                     Architecture
-                    <input type="architecture" />
                     <select id="architecture">
                         <option value="modern">modern</option>
                         <option value="futuristic">futuristic</option>
-                        <option value=""></option>
+                        <option value="big-building">big buildings</option>
                     </select>
                 </label>
                 <label>
                     City Attractions
-                    <input type="city-attractions" />
                     <select id="city-attractions">
                         <option value="museums">museums</option>
                         <option value="bridges">bike on bridges</option>
                         <option value="free pizza fridays">free pizza fridays</option>
-                        <option value="farmer markets">farmer markets</option>
                     </select>
                 </label>
-            </section>
+            </div>
+            <div id="pictures">
+                <h3>Gotham City</h3>
+                <img src="./assets/gotham.jpg" height="200px" />
+                <img src="./assets/images.jpg" height="200px"/>
+            </div>
+        </section>
         </main>
     </body>
-</html>
+    </html>
+    
+
+        
+
+                   
+                    
