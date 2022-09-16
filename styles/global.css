@@ -34,12 +34,12 @@ main {
     display: grid;
     padding: 20px;
     background-color: rgb(255, 238, 0);
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 #controls {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     background-color: rgb(30, 13, 46);
 }
 

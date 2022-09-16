@@ -29,9 +29,9 @@
         </header>
 
         <main>
-            <h2>Welcome to Gotham City....</h2>
             
             <section class="controls">
+                <h2>Welcome to Gotham City....</h2>
                 <div id="inputs"> 
                     <label>
                         Name
@@ -41,41 +41,45 @@
                 <label>
                     Climate
                     <select id="climate-select">
-                        <option value="cold">Polar</option>
+                        <option value="polar">Polar</option>
                         <option value="hot">sunny</option>
-                        <option value="rainy">Tropical</option>
-                        <button id="add-button">Add</button>
+                        <option value="tropical">Tropical</option>
                     </select>
                 </label>
                 <label>
                     Architecture
-                    <select id="architecture">
+                    <select id="architecture-select">
                         <option value="modern">modern</option>
                         <option value="futuristic">futuristic</option>
-                        <option value="big-building">big buildings</option>
+                        <option value="buildings">buildings</option>
                     </select>
                 </label>
+               
                 <label>
-                    City Attractions
-                    <select id="city-attractions">
-                        <option value="museums">museums</option>
-                        <option value="bridges">bike on bridges</option>
-                        <option value="free pizza fridays">free pizza fridays</option>
-                    </select>
-                </label>
-            </div>
-            <div id="pictures">
-                <h3>Gotham City</h3>
-                <img src="./assets/gotham.jpg" height="200px" />
-                <img src="./assets/images.jpg" height="200px"/>
-            </div>
-        </section>
-        </main>
-    </body>
-    </html>
+                   Slogan
+                    <input id="slogan-input">
+                    <button id="add-slogan-button">+</button>
+                </select>
+            </label>
+        </div>
+        <div id="pictures">
+            <h3 id='Gotham-City'>Gotham City</h3>
+            <img id="climate-image" src="./assets/gotham.jpg" height="200px" />
+            <img id="architecture-image" src="./assets/images.jpg" height="200px"/>
+            <p id= 'slogan-p'></p>
+        </div>
+    </section>
+    <p id="attraction-list"></p>
+    </main>
+</body>
+</html>
+   
+
+
     
 
-        
-
+               
+                
+                        
+                        
                    
-                    
